@@ -3,7 +3,7 @@ const StudentGroups = () => {
     { id: 1, name: "Alice", grade: "A" },
     { id: 2, name: "Bob", grade: "B" },
     { id: 3, name: "Charlie", grade: "A" },
-    { id: 4, name: "David", grade: "C" }
+    { id: 4, name: "David", grade: "C" },
   ];
 
   const grouped = students.reduce((acc, student) => {
@@ -14,12 +14,12 @@ const StudentGroups = () => {
 
   return (
     <div>
-      <h3>Students Grouped by Grade</h3>
-      {Object.keys(grouped).map(grade => (
+      <h3>Exercise 6: Student Groups</h3>
+      {Object.entries(grouped).map(([grade, names]) => (
         <div key={grade}>
           <h4>Grade {grade}</h4>
           <ul>
-            {grouped[grade].map((name, index) => (
+            {names.map((name, index) => (
               <li key={index}>{name}</li>
             ))}
           </ul>

@@ -1,17 +1,17 @@
 const MenuCategories = () => {
   const menu = [
     { category: "Fruits", items: ["Apple", "Banana", "Orange"] },
-    { category: "Vegetables", items: ["Carrot", "Spinach"] }
+    { category: "Vegetables", items: ["Carrot", "Spinach"] },
   ];
 
   return (
     <div>
-      <h3>Menu Categories</h3>
-      {menu.map((group, index) => (
+      <h3>Exercise 3: Menu Categories</h3>
+      {menu.map((section, index) => (
         <div key={index}>
-          <h4>{group.category}</h4>
+          <h4>{section.category}</h4>
           <ul>
-            {group.items.map((item, i) => (
+            {section.items.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
           </ul>

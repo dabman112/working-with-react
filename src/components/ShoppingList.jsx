@@ -3,13 +3,13 @@ const ShoppingList = () => {
 
   return (
     <div>
-      <h3>Shopping List</h3>
+      <h3>Exercise 1: Shopping List</h3>
       <ul>
         {shoppingList.map((item, index) => (
           <li
             key={index}
             style={{
-              textDecoration: item === "Eggs" ? "line-through" : "none"
+              textDecoration: item === "Eggs" ? "line-through" : "none",
             }}
           >
             {item}

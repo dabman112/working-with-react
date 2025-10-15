@@ -1,9 +1,9 @@
 const MessageList = () => {
-  const messages = []; // Try adding messages to test
+  const messages = []; // Try adding some items to test
 
   return (
     <div>
-      <h3>Messages</h3>
+      <h3>Exercise 7: Message List</h3>
       {messages.length === 0 ? (
         <p>No new messages</p>
       ) : (
